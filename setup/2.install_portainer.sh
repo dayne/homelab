@@ -6,7 +6,7 @@ source $SCRIPT_DIR/../lib/common.sh``
 yak "installing portainer"
 
 check_internet
-require_docker
+require_command docker
 
 yak "pulling latest portainer-ce"
 sudo docker pull portainer/portainer-ce:latest || error "Failed to pull latest Portainer docker image!"
